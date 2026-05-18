@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+.streamlit/secrets.toml
+vectorstore/*
+!vectorstore/.gitkeep
+.DS_Store
+.ipynb_checkpoints/
