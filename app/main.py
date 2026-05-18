@@ -1,5 +1,5 @@
 import streamlit as st
-
+from safety import check_input_safety, get_safety_message
 
 st.set_page_config(
     page_title="AI Support Triage Co-Pilot",
@@ -50,14 +50,21 @@ issue_description = st.text_area(
 submitted = st.button("Generate triage response / Δημιουργία απάντησης")
 
 if submitted:
-    if not issue_description.strip():
-        st.error("Please describe the issue first. / Παρακαλώ περιγράψτε πρώτα το πρόβλημα.")
+    safety_result = check_input_safety(issue_description)
+
+    if not safety_result.is_safe:
+        st.error(get_safety_message(safety_result, language))
+
+        with st.expander("Safety reason / Αιτία ελέγχου ασφαλείας"):
+            st.code(safety_result.reason)
+
     else:
         st.subheader("Triage Response / Απάντηση Διαλογής")
 
         if language == "Greek":
             st.write(
-                "Εδώ θα εμφανιστεί η απάντηση διαλογής που θα δημιουργηθεί από το AI."
+                "Εδώ θα εμφανιστεί η απάντηση διαλογής που θα δημιουργηθεί "
+                "από το AI."
             )
         else:
             st.write("This is where the AI-generated triage response will appear.")
