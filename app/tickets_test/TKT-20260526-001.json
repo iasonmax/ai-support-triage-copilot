@@ -1,0 +1,38 @@
+{
+  "ticket_id": "TKT-20260526-001",
+  "created_at": "2026-05-26T19:20:46.960611Z",
+  "priority": "High",
+  "category": "Software",
+  "queue": "software_queue",
+  "issue": {
+    "original_question": "Application crashes on startup",
+    "environment": "Windows 11"
+  },
+  "resolution_attempt": {
+    "kb_article_id": "APP-001",
+    "kb_article_title": "Application Crash Troubleshooting",
+    "similarity_score": 0.85,
+    "suggested_solution": "Clear cache and reinstall",
+    "kb_matched": true
+  },
+  "escalation": {
+    "is_escalated": false,
+    "escalation_reasons": [],
+    "auto_escalated": false
+  },
+  "usage_tracking": {
+    "kb_article_usage_count": 5,
+    "kb_success_rate": 0.8,
+    "needs_attention": false
+  },
+  "user_review": {
+    "priority_override": null,
+    "category_override": null,
+    "internal_notes": "User confirmed issue resolved after cache clear",
+    "reviewed_by": null,
+    "reviewed_at": null
+  },
+  "llm_response": "Try clearing your cache and restarting the application.",
+  "created_by": "user@company.com",
+  "status": "open"
+}

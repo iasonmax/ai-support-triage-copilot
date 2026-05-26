@@ -1,0 +1,40 @@
+{
+  "ticket_id": "TKT-20260526-001",
+  "created_at": "2026-05-26T21:39:24.357868Z",
+  "priority": "Medium",
+  "category": "Hardware",
+  "queue": "general_queue",
+  "issue": {
+    "original_question": "My keyboard is not working this is very serious it urgent critical ok you idiot I tried everythink and it is not fking working",
+    "environment": null
+  },
+  "resolution_attempt": {
+    "kb_article_id": "adobe_fix",
+    "kb_article_title": "Unknown Article",
+    "similarity_score": 0.7188545521274649,
+    "suggested_solution": "I can see you're frustrated, and I'm here to help.\n\nIt sounds like your issue is not related to Adobe, but rather your keyboard. Let's try a different approach.\n\nCan you please tell me what operating system you're using (Windows or Mac)? Additionally, have you tried restarting your computer or checking the keyboard settings in the Control Panel/Settings?\n\nIf none of these steps help, we can explore further troubleshooting options together.",
+    "kb_matched": true
+  },
+  "escalation": {
+    "is_escalated": true,
+    "escalation_reasons": [
+      "failed"
+    ],
+    "auto_escalated": true
+  },
+  "usage_tracking": {
+    "kb_article_usage_count": 1,
+    "kb_success_rate": 0.0,
+    "needs_attention": true
+  },
+  "user_review": {
+    "priority_override": "Medium",
+    "category_override": "Hardware",
+    "internal_notes": "",
+    "reviewed_by": "support_user",
+    "reviewed_at": "2026-05-26T21:40:14.476025Z"
+  },
+  "llm_response": "I can see you're frustrated, and I'm here to help.\n\nIt sounds like your issue is not related to Adobe, but rather your keyboard. Let's try a different approach.\n\nCan you please tell me what operating system you're using (Windows or Mac)? Additionally, have you tried restarting your computer or checking the keyboard settings in the Control Panel/Settings?\n\nIf none of these steps help, we can explore further troubleshooting options together.",
+  "created_by": "support_user",
+  "status": "open"
+}
